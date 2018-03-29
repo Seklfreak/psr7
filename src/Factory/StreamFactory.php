@@ -11,7 +11,7 @@ use Psr\Http\Message\StreamInterface;
 /**
  * @author Tobias Nyholm <tobias.nyholm@gmail.com>
  */
-class StreamFactory implements \Http\Message\StreamFactory, StreamFactoryInterface
+final class StreamFactory implements \Http\Message\StreamFactory, StreamFactoryInterface
 {
     public function createStream($body = null)
     {

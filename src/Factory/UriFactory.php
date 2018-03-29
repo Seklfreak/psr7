@@ -11,7 +11,7 @@ use Psr\Http\Message\UriInterface;
 /**
  * @author Tobias Nyholm <tobias.nyholm@gmail.com>
  */
-class UriFactory implements \Http\Message\UriFactory, UriFactoryInterface
+final class UriFactory implements \Http\Message\UriFactory, UriFactoryInterface
 {
     public function createUri($uri = ''): UriInterface
     {

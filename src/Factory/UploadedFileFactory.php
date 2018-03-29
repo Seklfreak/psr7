@@ -13,7 +13,7 @@ use Nyholm\Psr7\UploadedFile;
  * @internal This class does not fall under our BC promise. We will adapt to changes to the http-interop/http-factory.
  * This class will be finalized when the PSR-17 is accepted.
  */
-class UploadedFileFactory implements UploadedFileFactoryInterface
+final class UploadedFileFactory implements UploadedFileFactoryInterface
 {
     public function createUploadedFile(
         $file,

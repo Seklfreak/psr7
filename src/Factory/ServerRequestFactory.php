@@ -18,7 +18,7 @@ use Nyholm\Psr7\UploadedFile;
  * @internal This class does not fall under our BC promise. We will adapt to changes to the http-interop/http-factory.
  * This class will be finalized when the PSR-17 is accepted.
  */
-class ServerRequestFactory implements ServerRequestFactoryInterface
+final class ServerRequestFactory implements ServerRequestFactoryInterface
 {
     public function createServerRequest($method, $uri): ServerRequestInterface
     {
